@@ -26,7 +26,7 @@ export class AuthService {
       throw new UnauthorizedException('Invalid email or password');
     }
     return {
-      accessToken: this.jwtService.sign({ userId: user.id }),
+      accessToken: this.jwtService.sign({ id: user.id, email: user.email }),
     };
   }
 }
