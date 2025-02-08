@@ -18,7 +18,7 @@ A full-stack user authentication system using **NestJS, Prisma, PostgreSQL, and 
 
 ## Installation
 
-### 1️⃣ Backend Setup (NestJS + Prisma)
+### Backend Setup (NestJS + Prisma)
 ```sh
 # Clone the repository
 git clone https://github.com/KayMas2808/devlink
