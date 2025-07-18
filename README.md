@@ -2,60 +2,6 @@
 
 A modern, production-ready user authentication and management system built with **NestJS, Prisma, PostgreSQL**, featuring advanced security, comprehensive API documentation, and professional development practices.
 
-## Key Features
-
-### Advanced Authentication & Security
-- **JWT Authentication** with refresh token rotation
-- **Role-Based Access Control (RBAC)** with permissions system
-- **Email Verification** with secure token-based verification
-- **Password Reset** functionality with time-limited tokens
-- **Rate Limiting** to prevent abuse
-- **Security Headers** with Helmet.js
-- **Input Validation** and sanitization
-- **Session Management** with device tracking
-
-### Professional Database Design
-- **Comprehensive Schema** with related models for users, roles, permissions
-- **Soft Deletes** for data recovery
-- **Audit Logging** for activity tracking
-- **User Preferences** and settings
-- **File Management** with metadata
-- **Activity Logs** for user actions
-
-### Professional API Design
-- **OpenAPI/Swagger Documentation** with interactive UI
-- **API Versioning** (v1 support with room for expansion)
-- **Comprehensive DTOs** with validation using class-validator
-- **Consistent Response Format** across all endpoints
-- **Global Error Handling** with structured responses
-- **Request/Response Logging** 
-- **Pagination, Filtering & Search** for list endpoints
-
-### File Management System
-- **Secure File Upload** with type and size validation
-- **Image Processing** with Sharp
-- **Access Control** based on permissions
-- **File metadata tracking**
-
-### Communication Features
-- **Email System** with HTML templates
-- **Background Job Processing** infrastructure
-- **Event-Driven Architecture** 
-
-### Monitoring & Quality
-- **Professional Logging** with Winston
-- **Health Check Endpoints** 
-- **Performance Monitoring** with request timing
-- **User Activity Tracking**
-- **Code Quality** with ESLint and Prettier
-
-### Development & DevOps
-- **Docker Support** for containerization
-- **CI/CD Pipeline** with GitHub Actions
-- **Testing Infrastructure** (Unit, Integration, E2E)
-- **Environment Configuration** management
-- **TypeScript** with strict typing
-
 ## Architecture Overview
 
 ```
@@ -78,19 +24,6 @@ src/
 │   └── seed.ts           # Database Seeding
 └── files/                # File Management (ready for expansion)
 ```
-
-## Database Schema
-
-Professional database design includes:
-
-- **Users** - Complete user profiles with verification status
-- **Roles & Permissions** - Flexible RBAC system
-- **Email Tokens** - Email verification and password reset
-- **Files** - File upload and management
-- **Activity Logs** - Comprehensive audit trail
-- **User Sessions** - Multi-device session management
-- **User Preferences** - Customizable user settings
-- **API Keys** - Service-to-service authentication
 
 ## API Endpoints
 
@@ -197,7 +130,7 @@ RATE_LIMIT_TTL=60
 RATE_LIMIT_LIMIT=100
 ```
 
-## API Documentation
+## API
 
 Once the server is running, visit:
 - **Interactive API Docs**: `http://localhost:3000/docs`
@@ -219,7 +152,7 @@ npm run test:cov
 npm run test:watch
 ```
 
-## Development with Docker
+## Docker
 
 ```bash
 # Start all services (API, Database, Redis, Email)
@@ -253,32 +186,6 @@ docker-compose --profile tools up -d
 - **JWT Security**: Short-lived access tokens with refresh rotation
 - **CORS Protection**: Configurable CORS policies
 
-## What Makes This Resume-Worthy
-
-### Technical Skills Demonstrated
-- **Backend Architecture**: Scalable NestJS application structure
-- **Database Design**: Complex relational database with proper normalization
-- **Security Implementation**: Enterprise-grade security practices
-- **API Design**: RESTful APIs with proper documentation
-- **Authentication**: JWT-based auth with refresh tokens and RBAC
-- **Testing**: Comprehensive testing strategy
-- **DevOps**: CI/CD pipeline and containerization
-
-### Professional Development Practices
-- **Code Quality**: TypeScript, ESLint, Prettier
-- **Documentation**: Comprehensive API docs and README
-- **Version Control**: Professional Git workflow
-- **Environment Management**: Proper configuration handling
-- **Error Handling**: Robust exception management
-- **Logging**: Structured logging for debugging and monitoring
-
-### Production Readiness
-- **Performance**: Optimized database queries and caching
-- **Scalability**: Designed for horizontal scaling
-- **Monitoring**: Health checks and logging
-- **Security**: Multiple layers of security protection
-- **Reliability**: Error recovery and audit trails
-
 ## Ready-to-Use Credentials
 
 After running `npm run seed`, use these credentials:
@@ -290,23 +197,3 @@ After running `npm run seed`, use these credentials:
 **Demo Users:**
 - Moderator: `moderator@devlink.com` / `Password123!`
 - User: `user@devlink.com` / `Password123!`
-
-## Project Highlights for Resume
-
-- **Professional User Management API** with advanced authentication
-- **Role-Based Access Control** system with granular permissions
-- **Comprehensive API documentation** with OpenAPI/Swagger
-- **Full TypeScript implementation** with strict type checking
-- **CI/CD pipeline** with automated testing and deployment
-- **Docker containerization** for development and deployment
-- **Professional security implementation** including rate limiting and validation
-- **Scalable database design** with audit logging and soft deletes
-
-This project demonstrates **mid to senior-level development skills** and showcases the ability to build production-ready applications with professional development practices.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-Perfect for showcasing full-stack development skills in interviews.
-
